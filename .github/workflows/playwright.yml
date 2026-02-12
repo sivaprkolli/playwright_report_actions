@@ -45,7 +45,7 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     environment:
-      name: github-pages-deployment
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Download artifact
@@ -53,6 +53,33 @@ jobs:
       with:
         name: playwright-report
         path: reports
+    - name: Create index page
+      run: |
+        cat > reports/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <title>Playwright Test Reports</title>
+          <style>
+            body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+            h1 { color: #333; }
+            .report-links { list-style: none; padding: 0; }
+            .report-links li { margin: 15px 0; }
+            .report-links a { display: inline-block; padding: 12px 24px; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; }
+            .report-links a:hover { background: #0052a3; }
+          </style>
+        </head>
+        <body>
+          <h1>Playwright Test Reports</h1>
+          <ul class="report-links">
+            <li><a href="smart-report.html">Smart Report (Detailed Analysis)</a></li>
+            <li><a href="report/index.html">Ortoni Report</a></li>
+            <li><a href="playwright-report/index.html">Standard Playwright Report</a></li>
+          </ul>
+        </body>
+        </html>
+        EOF
     - name: Setup Pages
       uses: actions/configure-pages@v4
     - name: Upload artifact to Pages
