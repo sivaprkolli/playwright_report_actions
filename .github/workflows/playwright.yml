@@ -26,11 +26,18 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
       continue-on-error: true
+    - name: Prepare reports for upload
+      if: ${{ !cancelled() }}
+      run: |
+        mkdir -p reports-bundle
+        cp -r tests/*.html tests/*.json tests/history-runs reports-bundle/ 2>/dev/null || true
+        cp -r report reports-bundle/ 2>/dev/null || true
+        cp -r playwright-report reports-bundle/ 2>/dev/null || true
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
         name: playwright-report
-        path: playwright-report/
+        path: reports-bundle/
         retention-days: 30
   
   deploy:
@@ -45,13 +52,13 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: playwright-report
-        path: playwright-report
+        path: reports
     - name: Setup Pages
       uses: actions/configure-pages@v4
     - name: Upload artifact to Pages
       uses: actions/upload-pages-artifact@v3
       with:
-        path: playwright-report
+        path: reports
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
