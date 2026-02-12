@@ -1,0 +1,179 @@
+{
+  "runs": [
+    {
+      "runId": "run-1769087724007",
+      "timestamp": "2026-01-22T13:15:24.007Z"
+    },
+    {
+      "runId": "run-1769332820281",
+      "timestamp": "2026-01-25T09:20:20.281Z"
+    },
+    {
+      "runId": "run-1769332919584",
+      "timestamp": "2026-01-25T09:21:59.584Z"
+    },
+    {
+      "runId": "run-1769332963667",
+      "timestamp": "2026-01-25T09:22:43.667Z"
+    },
+    {
+      "runId": "run-1770793013962",
+      "timestamp": "2026-02-11T06:56:53.962Z"
+    }
+  ],
+  "tests": {
+    "example.spec.ts::has title": [
+      {
+        "passed": true,
+        "duration": 3517,
+        "timestamp": "2026-01-22T13:15:28.351Z",
+        "runId": "run-1769087724007",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 6280,
+        "timestamp": "2026-01-25T09:20:28.539Z",
+        "runId": "run-1769332820281",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 4867,
+        "timestamp": "2026-01-25T09:22:09.549Z",
+        "runId": "run-1769332919584",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 1303,
+        "timestamp": "2026-01-25T09:22:46.928Z",
+        "runId": "run-1769332963667",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 3346,
+        "timestamp": "2026-02-11T06:57:15.517Z",
+        "runId": "run-1770793013962",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "example.spec.ts::get started link": [
+      {
+        "passed": true,
+        "duration": 3564,
+        "timestamp": "2026-01-22T13:15:28.351Z",
+        "runId": "run-1769087724007",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 6497,
+        "timestamp": "2026-01-25T09:20:28.539Z",
+        "runId": "run-1769332820281",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 4990,
+        "timestamp": "2026-01-25T09:22:09.549Z",
+        "runId": "run-1769332919584",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 761,
+        "timestamp": "2026-01-25T09:22:46.928Z",
+        "runId": "run-1769332963667",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 1273,
+        "timestamp": "2026-02-11T06:57:15.517Z",
+        "runId": "run-1770793013962",
+        "skipped": false,
+        "retry": 0
+      }
+    ]
+  },
+  "summaries": [
+    {
+      "runId": "run-1769087724007",
+      "timestamp": "2026-01-22T13:15:24.007Z",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "slow": 0,
+      "duration": 4344,
+      "passRate": 100
+    },
+    {
+      "runId": "run-1769332820281",
+      "timestamp": "2026-01-25T09:20:20.281Z",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "slow": 2,
+      "duration": 8257,
+      "passRate": 100
+    },
+    {
+      "runId": "run-1769332919584",
+      "timestamp": "2026-01-25T09:21:59.584Z",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "slow": 0,
+      "duration": 9965,
+      "passRate": 100
+    },
+    {
+      "runId": "run-1769332963667",
+      "timestamp": "2026-01-25T09:22:43.667Z",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "slow": 0,
+      "duration": 3261,
+      "passRate": 100
+    },
+    {
+      "runId": "run-1770793013962",
+      "timestamp": "2026-02-11T06:56:53.962Z",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "slow": 0,
+      "duration": 21555,
+      "passRate": 100
+    }
+  ],
+  "runFiles": {
+    "run-1769087724007": "./history-runs/run-1769087724007.json",
+    "run-1769332820281": "./history-runs/run-1769332820281.json",
+    "run-1769332919584": "./history-runs/run-1769332919584.json",
+    "run-1769332963667": "./history-runs/run-1769332963667.json",
+    "run-1770793013962": "./history-runs/run-1770793013962.json"
+  }
+}

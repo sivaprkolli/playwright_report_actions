@@ -1,0 +1,78 @@
+{
+  "runId": "run-1769332963667",
+  "timestamp": "2026-01-25T09:22:43.667Z",
+  "tests": {
+    "example.spec.ts::has title": {
+      "testId": "example.spec.ts::has title",
+      "title": "has title",
+      "file": "example.spec.ts",
+      "status": "passed",
+      "duration": 1303,
+      "retry": 0,
+      "steps": [
+        {
+          "title": "Launch browser",
+          "duration": 222,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create context",
+          "duration": 14,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create page",
+          "duration": 147,
+          "category": "pw:api"
+        },
+        {
+          "title": "Navigate to \"/\"",
+          "duration": 1043,
+          "category": "pw:api",
+          "isSlowest": true
+        },
+        {
+          "title": "Close context",
+          "duration": 25,
+          "category": "pw:api"
+        }
+      ]
+    },
+    "example.spec.ts::get started link": {
+      "testId": "example.spec.ts::get started link",
+      "title": "get started link",
+      "file": "example.spec.ts",
+      "status": "passed",
+      "duration": 761,
+      "retry": 0,
+      "steps": [
+        {
+          "title": "Create context",
+          "duration": 14,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create page",
+          "duration": 98,
+          "category": "pw:api"
+        },
+        {
+          "title": "Navigate to \"/\"",
+          "duration": 409,
+          "category": "pw:api",
+          "isSlowest": true
+        },
+        {
+          "title": "Click getByRole('link', { name: 'Get started' })",
+          "duration": 158,
+          "category": "pw:api"
+        },
+        {
+          "title": "Close context",
+          "duration": 33,
+          "category": "pw:api"
+        }
+      ]
+    }
+  }
+}

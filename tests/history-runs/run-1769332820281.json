@@ -1,0 +1,83 @@
+{
+  "runId": "run-1769332820281",
+  "timestamp": "2026-01-25T09:20:20.281Z",
+  "tests": {
+    "example.spec.ts::has title": {
+      "testId": "example.spec.ts::has title",
+      "title": "has title",
+      "file": "example.spec.ts",
+      "status": "passed",
+      "duration": 6280,
+      "retry": 0,
+      "steps": [
+        {
+          "title": "Launch browser",
+          "duration": 859,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create context",
+          "duration": 12,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create page",
+          "duration": 118,
+          "category": "pw:api"
+        },
+        {
+          "title": "Navigate to \"/\"",
+          "duration": 6061,
+          "category": "pw:api",
+          "isSlowest": true
+        },
+        {
+          "title": "Close context",
+          "duration": 12,
+          "category": "pw:api"
+        }
+      ]
+    },
+    "example.spec.ts::get started link": {
+      "testId": "example.spec.ts::get started link",
+      "title": "get started link",
+      "file": "example.spec.ts",
+      "status": "passed",
+      "duration": 6497,
+      "retry": 0,
+      "steps": [
+        {
+          "title": "Launch browser",
+          "duration": 882,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create context",
+          "duration": 11,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create page",
+          "duration": 102,
+          "category": "pw:api"
+        },
+        {
+          "title": "Navigate to \"/\"",
+          "duration": 6164,
+          "category": "pw:api",
+          "isSlowest": true
+        },
+        {
+          "title": "Click getByRole('link', { name: 'Get started' })",
+          "duration": 117,
+          "category": "pw:api"
+        },
+        {
+          "title": "Close context",
+          "duration": 13,
+          "category": "pw:api"
+        }
+      ]
+    }
+  }
+}
